@@ -1,0 +1,55 @@
+.markdown-body pre {
+  position: relative !important;
+  margin: 12px 0 !important;
+  padding: 16px !important;
+  padding-top: 48px !important; 
+  border-radius: 8px !important;
+  background: #1e1e1e !important;
+  overflow: visible !important;
+}
+
+.copy-code-btn {
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 4px !important;
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  z-index: 9999 !important;
+  transition: all 0.2s !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2) !important;
+}
+.copy-code-btn:hover {
+  background: #f3f4f6 !important;
+}
+.copy-code-btn svg {
+  color: #1f2937 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.copy-toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -20px);
+  padding: 10px 20px;
+  background: #111827;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  z-index: 99999;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.copy-toast.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
